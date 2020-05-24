@@ -17,22 +17,11 @@
 package com.netflix.ribbon.examples.rx.proxy;
 
 import com.netflix.ribbon.RibbonRequest;
-import com.netflix.ribbon.examples.rx.common.InMemoryCacheProviderFactory;
-import com.netflix.ribbon.examples.rx.common.Movie;
-import com.netflix.ribbon.examples.rx.common.RecommendationServiceFallbackHandler;
-import com.netflix.ribbon.examples.rx.common.RecommendationServiceResponseValidator;
-import com.netflix.ribbon.examples.rx.common.RxMovieTransformer;
-import com.netflix.ribbon.proxy.annotation.CacheProvider;
-import com.netflix.ribbon.proxy.annotation.ClientProperties;
+import com.netflix.ribbon.examples.rx.common.*;
+import com.netflix.ribbon.proxy.annotation.*;
 import com.netflix.ribbon.proxy.annotation.ClientProperties.Property;
-import com.netflix.ribbon.proxy.annotation.Content;
-import com.netflix.ribbon.proxy.annotation.ContentTransformerClass;
-import com.netflix.ribbon.proxy.annotation.Http;
 import com.netflix.ribbon.proxy.annotation.Http.Header;
 import com.netflix.ribbon.proxy.annotation.Http.HttpMethod;
-import com.netflix.ribbon.proxy.annotation.Hystrix;
-import com.netflix.ribbon.proxy.annotation.TemplateName;
-import com.netflix.ribbon.proxy.annotation.Var;
 import io.netty.buffer.ByteBuf;
 
 /**

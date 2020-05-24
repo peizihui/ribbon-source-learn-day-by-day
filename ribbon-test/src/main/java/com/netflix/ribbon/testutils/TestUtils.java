@@ -17,7 +17,7 @@
  */
 package com.netflix.ribbon.testutils;
 
-import static org.junit.Assert.assertTrue;
+import rx.functions.Func0;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -25,7 +25,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import rx.functions.Func0;
+import static org.junit.Assert.assertTrue;
 
 public class TestUtils {
     

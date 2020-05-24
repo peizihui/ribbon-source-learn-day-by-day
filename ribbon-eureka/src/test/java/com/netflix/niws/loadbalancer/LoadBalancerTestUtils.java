@@ -5,7 +5,6 @@ import com.netflix.appinfo.InstanceInfo;
 import com.netflix.appinfo.MyDataCenterInfo;
 import com.netflix.discovery.DefaultEurekaClientConfig;
 import com.netflix.discovery.DiscoveryClient;
-import com.netflix.discovery.DiscoveryManager;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,18 +19,16 @@ package com.netflix.ribbon.evache;
 import com.netflix.evcache.EVCache;
 import com.netflix.evcache.EVCacheException;
 import com.netflix.ribbon.CacheProvider;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import rx.Observable;
+import rx.Observable.OnSubscribe;
+import rx.Subscriber;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
-
-import rx.Observable;
-import rx.Observable.OnSubscribe;
-import rx.Subscriber;
 
 /**
  * @author Tomasz Bak

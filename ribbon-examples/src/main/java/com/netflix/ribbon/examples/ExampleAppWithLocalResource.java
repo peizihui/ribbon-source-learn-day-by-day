@@ -17,13 +17,13 @@
  */
 package com.netflix.ribbon.examples;
 
-import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.net.httpserver.HttpServer;
+
+import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * A base class for some sample applications that starts and stops a local server

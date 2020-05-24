@@ -1,22 +1,16 @@
 package com.netflix.ribbon.examples.loadbalancer;
 
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
-
-import rx.Observable;
-
 import com.google.common.collect.Lists;
 import com.netflix.client.DefaultLoadBalancerRetryHandler;
 import com.netflix.client.RetryHandler;
-import com.netflix.loadbalancer.BaseLoadBalancer;
-import com.netflix.loadbalancer.ILoadBalancer;
-import com.netflix.loadbalancer.LoadBalancerBuilder;
-import com.netflix.loadbalancer.LoadBalancerStats;
-import com.netflix.loadbalancer.Server;
+import com.netflix.loadbalancer.*;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import com.netflix.loadbalancer.reactive.ServerOperation;
+import rx.Observable;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
 
 /**
  *

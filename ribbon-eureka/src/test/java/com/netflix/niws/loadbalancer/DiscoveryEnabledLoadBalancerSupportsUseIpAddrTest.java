@@ -17,14 +17,12 @@
 */
 package com.netflix.niws.loadbalancer;
 
-import static org.easymock.EasyMock.expect;
-import static org.powermock.api.easymock.PowerMock.createMock;
-import static org.powermock.api.easymock.PowerMock.replay;
-import static org.powermock.api.easymock.PowerMock.verify;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.config.ConfigurationManager;
+import com.netflix.discovery.DiscoveryClient;
+import com.netflix.discovery.DiscoveryManager;
+import com.netflix.loadbalancer.Server;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -35,12 +33,11 @@ import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import com.netflix.appinfo.InstanceInfo;
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.config.ConfigurationManager;
-import com.netflix.discovery.DiscoveryClient;
-import com.netflix.discovery.DiscoveryManager;
-import com.netflix.loadbalancer.Server;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.easymock.EasyMock.expect;
+import static org.powermock.api.easymock.PowerMock.*;
 
 /**
  * Verify behavior of the override flag DiscoveryEnabledNIWSServerList.useIpAddr 

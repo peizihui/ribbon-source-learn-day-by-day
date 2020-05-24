@@ -17,22 +17,21 @@
 */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.*;
+import com.netflix.client.ClientFactory;
+import com.netflix.client.config.IClientConfig;
+import com.netflix.config.ConfigurationManager;
+import com.netflix.loadbalancer.DynamicServerListLoadBalancer;
+import com.netflix.loadbalancer.Server;
+import org.apache.commons.configuration.Configuration;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.commons.configuration.Configuration;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import com.netflix.client.ClientFactory;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.config.ConfigurationManager;
-import com.netflix.loadbalancer.DynamicServerListLoadBalancer;
-import com.netflix.loadbalancer.Server;
+import static org.junit.Assert.*;
 
 public class ServerListLoabBalancerTest {
 

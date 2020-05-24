@@ -16,9 +16,9 @@
 
 package com.netflix.ribbon;
 
-import java.util.concurrent.Future;
-
 import rx.Observable;
+
+import java.util.concurrent.Future;
 
 /**
  * A decorated request object whose response content contains the execution meta data.

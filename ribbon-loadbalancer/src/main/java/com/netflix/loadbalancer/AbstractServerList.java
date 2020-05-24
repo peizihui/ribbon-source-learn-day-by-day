@@ -17,9 +17,9 @@
 */
 package com.netflix.loadbalancer;
 
+import com.netflix.client.ClientException;
 import com.netflix.client.ClientFactory;
 import com.netflix.client.IClientConfigAware;
-import com.netflix.client.ClientException;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
 

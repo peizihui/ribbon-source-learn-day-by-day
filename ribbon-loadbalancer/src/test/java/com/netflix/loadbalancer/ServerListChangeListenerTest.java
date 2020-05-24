@@ -17,14 +17,13 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import com.google.common.collect.Lists;
+import org.junit.Test;
 
 import java.util.List;
 
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ServerListChangeListenerTest {
 

@@ -17,20 +17,19 @@
 */
 package com.netflix.niws.client.http;
 
-import static org.junit.Assert.assertNotNull;
+import com.netflix.client.ClientFactory;
+import com.netflix.client.config.CommonClientConfigKey;
+import com.netflix.config.ConfigurationManager;
+import com.sun.jersey.core.util.Base64;
+import org.apache.commons.configuration.AbstractConfiguration;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.security.KeyStore;
 import java.security.cert.Certificate;
 
-import org.apache.commons.configuration.AbstractConfiguration;
-import org.junit.Test;
-
-import com.netflix.client.ClientFactory;
-import com.netflix.client.config.CommonClientConfigKey;
-import com.netflix.config.ConfigurationManager;
-import com.sun.jersey.core.util.Base64;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Test keystore info is configurable/retrievable

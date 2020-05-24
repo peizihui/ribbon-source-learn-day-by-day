@@ -17,14 +17,13 @@
  */
 package com.netflix.http4;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import com.netflix.client.config.ClientConfigFactory;
-import org.apache.commons.collections.keyvalue.MultiKey;
-
 import com.netflix.client.config.IClientConfig;
 import com.netflix.servo.monitor.Monitors;
+import org.apache.commons.collections.keyvalue.MultiKey;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Factory class to get an instance of NFHttpClient

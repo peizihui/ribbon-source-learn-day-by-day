@@ -17,17 +17,16 @@
  */
 package com.netflix.ribbon.transport.netty.http;
 
-import java.net.ConnectException;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
-import java.util.List;
-
-
 import com.google.common.collect.Lists;
 import com.netflix.client.ClientException;
 import com.netflix.client.DefaultLoadBalancerRetryHandler;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.client.http.UnexpectedHttpResponseException;
+
+import java.net.ConnectException;
+import java.net.SocketException;
+import java.net.SocketTimeoutException;
+import java.util.List;
 
 public class NettyHttpLoadBalancerErrorHandler extends DefaultLoadBalancerRetryHandler {
 

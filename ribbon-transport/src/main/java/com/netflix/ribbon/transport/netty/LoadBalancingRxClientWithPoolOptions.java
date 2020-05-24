@@ -17,14 +17,6 @@
  */
 package com.netflix.ribbon.transport.netty;
 
-import io.reactivex.netty.client.CompositePoolLimitDeterminationStrategy;
-import io.reactivex.netty.client.MaxConnectionsBasedStrategy;
-import io.reactivex.netty.client.PoolLimitDeterminationStrategy;
-import io.reactivex.netty.client.RxClient;
-import io.reactivex.netty.pipeline.PipelineConfigurator;
-
-import java.util.concurrent.ScheduledExecutorService;
-
 import com.netflix.client.RetryHandler;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.DefaultClientConfigImpl;
@@ -33,6 +25,13 @@ import com.netflix.client.config.IClientConfigKey;
 import com.netflix.client.config.IClientConfigKey.Keys;
 import com.netflix.loadbalancer.ILoadBalancer;
 import com.netflix.loadbalancer.LoadBalancerBuilder;
+import io.reactivex.netty.client.CompositePoolLimitDeterminationStrategy;
+import io.reactivex.netty.client.MaxConnectionsBasedStrategy;
+import io.reactivex.netty.client.PoolLimitDeterminationStrategy;
+import io.reactivex.netty.client.RxClient;
+import io.reactivex.netty.pipeline.PipelineConfigurator;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 public abstract class LoadBalancingRxClientWithPoolOptions<I, O, T extends RxClient<I, O>> extends LoadBalancingRxClient<I, O, T>{
     protected CompositePoolLimitDeterminationStrategy poolStrategy;

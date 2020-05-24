@@ -17,8 +17,6 @@
  */
 package com.netflix.loadbalancer;
 
-import static java.util.Collections.singleton;
-
 import com.google.common.collect.ImmutableList;
 import com.netflix.client.ClientFactory;
 import com.netflix.client.IClientConfigAware;
@@ -30,22 +28,17 @@ import com.netflix.servo.annotations.Monitor;
 import com.netflix.servo.monitor.Counter;
 import com.netflix.servo.monitor.Monitors;
 import com.netflix.util.concurrent.ShutdownEnabledTimer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import static java.util.Collections.singleton;
 
 /**
  * A basic implementation of the load balancer where an arbitrary list of

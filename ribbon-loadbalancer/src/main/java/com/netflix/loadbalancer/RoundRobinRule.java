@@ -17,7 +17,6 @@
  */
 package com.netflix.loadbalancer;
 
-import com.netflix.client.config.IClientConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

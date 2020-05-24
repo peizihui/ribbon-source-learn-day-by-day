@@ -1,18 +1,16 @@
 package com.netflix.ribbon.hystrix;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
+import com.netflix.hystrix.HystrixCommandGroupKey;
+import com.netflix.hystrix.HystrixObservableCommand;
 import org.junit.Test;
-
 import rx.Notification;
 import rx.Observable;
 import rx.Observer;
 import rx.subjects.ReplaySubject;
 import rx.subjects.Subject;
 
-import com.netflix.hystrix.HystrixCommandGroupKey;
-import com.netflix.hystrix.HystrixObservableCommand;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author Tomasz Bak

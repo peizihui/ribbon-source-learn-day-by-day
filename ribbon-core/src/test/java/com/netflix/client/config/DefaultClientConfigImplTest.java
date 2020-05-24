@@ -1,18 +1,17 @@
 package com.netflix.client.config;
 
-import static org.junit.Assert.*;
+import com.netflix.config.ConfigurationManager;
+import org.junit.Assert;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.TestName;
 
 import java.util.Collections;
 import java.util.Date;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.junit.Assert;
-import org.junit.Rule;
-import org.junit.Test;
-
-import com.netflix.config.ConfigurationManager;
-import org.junit.rules.TestName;
+import static org.junit.Assert.*;
 
 public class DefaultClientConfigImplTest {
     

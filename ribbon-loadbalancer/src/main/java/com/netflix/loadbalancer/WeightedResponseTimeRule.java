@@ -19,16 +19,10 @@ package com.netflix.loadbalancer;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.client.config.IClientConfigKey;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /** 

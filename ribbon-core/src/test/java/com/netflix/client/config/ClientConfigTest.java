@@ -17,17 +17,8 @@
 */
 package com.netflix.client.config;
 
-import static org.junit.Assert.*;
-
 import com.netflix.config.ConfigurationManager;
-
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.TestName;
 import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
@@ -35,6 +26,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Objects;
 import java.util.Properties;
+
+import static org.junit.Assert.*;
 
 /**
  * Test cases to verify the correctness of the Client Configuration settings

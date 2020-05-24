@@ -17,21 +17,20 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.*;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
+import com.netflix.config.ConfigurationManager;
+import com.netflix.config.DeploymentContext.ContextKey;
+import org.junit.AfterClass;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.junit.AfterClass;
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
-import com.netflix.config.ConfigurationManager;
-import com.netflix.config.DeploymentContext.ContextKey;
+import static org.junit.Assert.*;
 
 public class PredicatesTest {
     

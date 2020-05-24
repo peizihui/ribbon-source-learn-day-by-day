@@ -1,15 +1,15 @@
 package com.netflix.client.http;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Multimap;
+
+import java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.AbstractMap.SimpleEntry;
-
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Multimap;
 
 public class CaseInsensitiveMultiMap implements HttpHeaders {
     Multimap<String, Entry<String, String>> map = ArrayListMultimap.create();

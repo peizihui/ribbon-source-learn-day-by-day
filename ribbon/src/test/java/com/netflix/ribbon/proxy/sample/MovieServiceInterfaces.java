@@ -1,18 +1,10 @@
 package com.netflix.ribbon.proxy.sample;
 
 import com.netflix.ribbon.RibbonRequest;
-import com.netflix.ribbon.proxy.annotation.CacheProvider;
-import com.netflix.ribbon.proxy.annotation.ClientProperties;
+import com.netflix.ribbon.proxy.annotation.*;
 import com.netflix.ribbon.proxy.annotation.ClientProperties.Property;
-import com.netflix.ribbon.proxy.annotation.Content;
-import com.netflix.ribbon.proxy.annotation.ContentTransformerClass;
-import com.netflix.ribbon.proxy.annotation.Http;
 import com.netflix.ribbon.proxy.annotation.Http.Header;
 import com.netflix.ribbon.proxy.annotation.Http.HttpMethod;
-import com.netflix.ribbon.proxy.annotation.Hystrix;
-import com.netflix.ribbon.proxy.annotation.ResourceGroup;
-import com.netflix.ribbon.proxy.annotation.TemplateName;
-import com.netflix.ribbon.proxy.annotation.Var;
 import com.netflix.ribbon.proxy.sample.HystrixHandlers.MovieFallbackHandler;
 import com.netflix.ribbon.proxy.sample.HystrixHandlers.SampleHttpResponseValidator;
 import io.netty.buffer.ByteBuf;

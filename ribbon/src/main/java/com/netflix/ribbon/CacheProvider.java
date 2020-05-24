@@ -15,11 +15,10 @@
  */
 package com.netflix.ribbon;
 
-import java.util.Map;
-
 import com.netflix.ribbon.RequestTemplate.RequestBuilder;
-
 import rx.Observable;
+
+import java.util.Map;
 
 public interface CacheProvider<T> {
     /**

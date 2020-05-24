@@ -25,7 +25,6 @@ import com.netflix.ribbon.proxy.sample.MovieServiceInterfaces.SampleMovieService
 import com.netflix.ribbon.proxy.sample.MovieServiceInterfaces.SampleMovieServiceWithResourceGroupClassAnnotation;
 import com.netflix.ribbon.proxy.sample.MovieServiceInterfaces.SampleMovieServiceWithResourceGroupNameAnnotation;
 import com.netflix.ribbon.proxy.sample.ResourceGroupClasses.SampleHttpResourceGroup;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;

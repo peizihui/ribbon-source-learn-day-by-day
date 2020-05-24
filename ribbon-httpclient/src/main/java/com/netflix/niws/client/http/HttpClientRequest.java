@@ -17,13 +17,12 @@
 */
 package com.netflix.niws.client.http;
 
-import java.net.URI;
-
-import javax.ws.rs.core.MultivaluedMap;
-
 import com.netflix.client.ClientRequest;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.client.http.HttpRequest;
+
+import javax.ws.rs.core.MultivaluedMap;
+import java.net.URI;
 
 /**
  * @see HttpRequest

@@ -17,12 +17,12 @@
 */
 package com.netflix.loadbalancer;
 
-import java.util.List;
-
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
+
+import java.util.List;
 
 /**
  * Utility class that can load the List of Servers from a Configuration (i.e

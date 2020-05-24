@@ -1,21 +1,19 @@
 package com.netflix.niws.client.http;
 
-import java.net.ConnectException;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
-import java.util.List;
-
+import com.google.common.collect.Lists;
+import com.netflix.client.ClientException;
+import com.netflix.client.DefaultLoadBalancerRetryHandler;
+import com.netflix.client.config.IClientConfig;
 import org.apache.http.ConnectionClosedException;
 import org.apache.http.NoHttpResponseException;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.conn.ConnectionPoolTimeoutException;
 import org.apache.http.conn.HttpHostConnectException;
 
-import com.google.common.collect.Lists;
-import com.netflix.client.ClientException;
-import com.netflix.client.DefaultLoadBalancerRetryHandler;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.client.http.HttpResponse;
+import java.net.ConnectException;
+import java.net.SocketException;
+import java.net.SocketTimeoutException;
+import java.util.List;
 
 public class HttpClientLoadBalancerErrorHandler extends DefaultLoadBalancerRetryHandler {
 

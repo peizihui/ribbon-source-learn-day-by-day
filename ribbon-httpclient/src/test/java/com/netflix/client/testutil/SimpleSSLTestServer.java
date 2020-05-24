@@ -18,25 +18,18 @@
 
 package com.netflix.client.testutil;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.nio.charset.Charset;
-import java.security.KeyStore;
+import com.google.common.io.Closeables;
+import org.junit.Ignore;
 
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLServerSocket;
 import javax.net.ssl.TrustManagerFactory;
-
-import org.junit.Ignore;
-
-import com.google.common.io.Closeables;
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.nio.charset.Charset;
+import java.security.KeyStore;
 
 /**
  *

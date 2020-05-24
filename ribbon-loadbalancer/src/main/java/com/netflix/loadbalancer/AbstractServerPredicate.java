@@ -17,18 +17,17 @@
  */
 package com.netflix.loadbalancer;
 
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import javax.annotation.Nullable;
-
 import com.google.common.base.Optional;
 import com.google.common.base.Predicate;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import com.netflix.client.config.IClientConfig;
+
+import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A basic building block for server filtering logic which can be used in rules and server list filters.

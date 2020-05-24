@@ -17,15 +17,14 @@
  */
 package com.netflix.niws.client.http;
 
-import java.net.URI;
-
-import org.junit.Test;
-
 import com.netflix.client.ClientFactory;
 import com.netflix.client.http.HttpRequest;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.loadbalancer.AbstractLoadBalancer;
 import com.netflix.loadbalancer.WeightedResponseTimeRule;
+import org.junit.Test;
+
+import java.net.URI;
 
 public class ResponseTimeWeightedRuleTest {
     

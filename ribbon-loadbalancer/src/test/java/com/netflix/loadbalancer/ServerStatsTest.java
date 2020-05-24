@@ -17,11 +17,9 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
-import com.netflix.servo.monitor.Monitors;
+import static org.junit.Assert.*;
 
 public class ServerStatsTest {
     

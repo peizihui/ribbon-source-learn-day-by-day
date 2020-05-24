@@ -17,28 +17,6 @@
  */
 package com.netflix.ribbon.transport.netty;
 
-import io.reactivex.netty.channel.ObservableConnection;
-import io.reactivex.netty.client.ClientMetricsEvent;
-import io.reactivex.netty.client.RxClient;
-import io.reactivex.netty.metrics.MetricEventsListener;
-import io.reactivex.netty.metrics.MetricEventsSubject;
-import io.reactivex.netty.pipeline.PipelineConfigurator;
-
-import java.net.URL;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-
-import javax.annotation.Nullable;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import rx.Observable;
-import rx.Subscription;
-
 import com.netflix.client.RetryHandler;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.DefaultClientConfigImpl;
@@ -48,14 +26,27 @@ import com.netflix.client.ssl.AbstractSslContextFactory;
 import com.netflix.client.ssl.ClientSslSocketFactoryException;
 import com.netflix.client.ssl.URLSslContextFactory;
 import com.netflix.client.util.Resources;
-import com.netflix.loadbalancer.BaseLoadBalancer;
-import com.netflix.loadbalancer.ILoadBalancer;
-import com.netflix.loadbalancer.LoadBalancerBuilder;
-import com.netflix.loadbalancer.LoadBalancerContext;
-import com.netflix.loadbalancer.Server;
-import com.netflix.loadbalancer.ServerListChangeListener;
+import com.netflix.loadbalancer.*;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import com.netflix.loadbalancer.reactive.ServerOperation;
+import io.reactivex.netty.channel.ObservableConnection;
+import io.reactivex.netty.client.ClientMetricsEvent;
+import io.reactivex.netty.client.RxClient;
+import io.reactivex.netty.metrics.MetricEventsListener;
+import io.reactivex.netty.metrics.MetricEventsSubject;
+import io.reactivex.netty.pipeline.PipelineConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import rx.Observable;
+import rx.Subscription;
+
+import javax.annotation.Nullable;
+import java.net.URL;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * Decorator for RxClient which adds load balancing functionality.  This implementation uses

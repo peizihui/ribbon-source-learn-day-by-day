@@ -17,18 +17,6 @@
  */
 package com.netflix.niws.client.http;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import java.net.URI;
-
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
-import org.junit.Test;
-
 import com.google.common.collect.Lists;
 import com.netflix.client.ClientException;
 import com.netflix.client.ClientFactory;
@@ -42,11 +30,15 @@ import com.netflix.config.ConfigurationManager;
 import com.netflix.http4.MonitoredConnectionManager;
 import com.netflix.http4.NFHttpClient;
 import com.netflix.http4.NFHttpClientFactory;
-import com.netflix.loadbalancer.AvailabilityFilteringRule;
-import com.netflix.loadbalancer.BaseLoadBalancer;
-import com.netflix.loadbalancer.DummyPing;
-import com.netflix.loadbalancer.Server;
-import com.netflix.loadbalancer.ServerStats;
+import com.netflix.loadbalancer.*;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.ClassRule;
+import org.junit.Test;
+
+import java.net.URI;
+
+import static org.junit.Assert.*;
 
 public class RetryTest {
     @ClassRule

@@ -18,17 +18,15 @@
 package com.netflix.http4.ssl;
 
 
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-
-import javax.net.ssl.SSLContext;
-
+import com.netflix.client.ssl.AbstractSslContextFactory;
+import com.netflix.client.ssl.ClientSslSocketFactoryException;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.conn.ssl.X509HostnameVerifier;
 
-import com.netflix.client.ssl.AbstractSslContextFactory;
-import com.netflix.client.ssl.ClientSslSocketFactoryException;
+import javax.net.ssl.SSLContext;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  *

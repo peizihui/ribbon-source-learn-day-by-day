@@ -1,20 +1,18 @@
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import org.junit.Test;
-
-import rx.Observable;
-import rx.Observable.OnSubscribe;
-import rx.Subscriber;
-
 import com.google.common.collect.Lists;
 import com.netflix.client.RetryHandler;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import com.netflix.loadbalancer.reactive.ServerOperation;
+import org.junit.Test;
+import rx.Observable;
+import rx.Observable.OnSubscribe;
+import rx.Subscriber;
+
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import static org.junit.Assert.assertEquals;
 
 public class LoadBalancerCommandTest {
 

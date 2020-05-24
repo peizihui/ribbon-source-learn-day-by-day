@@ -1,9 +1,9 @@
 package com.netflix.loadbalancer;
 
-import java.util.List;
-
 import com.google.common.collect.Lists;
 import com.netflix.client.config.IClientConfig;
+
+import java.util.List;
 
 public class MockServerList extends AbstractServerList<Server>  {
     

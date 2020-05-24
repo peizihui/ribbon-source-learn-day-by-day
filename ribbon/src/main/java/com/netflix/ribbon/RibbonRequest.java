@@ -15,9 +15,9 @@
  */
 package com.netflix.ribbon;
 
-import java.util.concurrent.Future;
-
 import rx.Observable;
+
+import java.util.concurrent.Future;
 
 /**
  * Request that provides blocking and non-blocking APIs to fetch the content.

@@ -17,11 +17,11 @@
 */
 package com.netflix.client;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import com.netflix.client.config.IClientConfig;
 import com.netflix.config.ConfigurationManager;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * A "VipAddress" in Ribbon terminology is a logical name used for a target

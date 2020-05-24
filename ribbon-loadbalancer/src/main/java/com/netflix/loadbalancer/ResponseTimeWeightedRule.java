@@ -17,18 +17,13 @@
 */
 package com.netflix.loadbalancer;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.atomic.AtomicBoolean;
-
+import com.netflix.client.config.IClientConfig;
+import com.netflix.client.config.IClientConfigKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.netflix.client.config.IClientConfig;
-import com.netflix.client.config.IClientConfigKey;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /** 
  * Rule that use the average/percentile response times

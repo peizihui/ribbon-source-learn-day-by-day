@@ -1,15 +1,13 @@
 package com.netflix.ribbon.transport.netty.http;
 
+import com.netflix.client.ClientException;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.reactivex.netty.protocol.http.client.HttpClientResponse;
-
-import java.util.concurrent.TimeUnit;
-
 import rx.Observable;
 import rx.functions.Func1;
 import rx.functions.Func2;
 
-import com.netflix.client.ClientException;
+import java.util.concurrent.TimeUnit;
 
 public class DefaultResponseToErrorPolicy<O> implements Func2<HttpClientResponse<O>, Integer, Observable<HttpClientResponse<O>>> {
     @Override

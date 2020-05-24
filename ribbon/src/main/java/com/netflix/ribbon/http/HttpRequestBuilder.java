@@ -15,17 +15,6 @@
  */
 package com.netflix.ribbon.http;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.ByteBufAllocator;
-import io.reactivex.netty.channel.ContentTransformer;
-import io.reactivex.netty.protocol.http.client.HttpClientRequest;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import rx.Observable;
-
 import com.netflix.hystrix.exception.HystrixBadRequestException;
 import com.netflix.ribbon.RequestTemplate.RequestBuilder;
 import com.netflix.ribbon.RibbonRequest;
@@ -33,6 +22,15 @@ import com.netflix.ribbon.http.HttpRequestTemplate.CacheProviderWithKeyTemplate;
 import com.netflix.ribbon.template.ParsedTemplate;
 import com.netflix.ribbon.template.TemplateParser;
 import com.netflix.ribbon.template.TemplateParsingException;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufAllocator;
+import io.reactivex.netty.channel.ContentTransformer;
+import io.reactivex.netty.protocol.http.client.HttpClientRequest;
+import rx.Observable;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class HttpRequestBuilder<T> extends RequestBuilder<T> {
 

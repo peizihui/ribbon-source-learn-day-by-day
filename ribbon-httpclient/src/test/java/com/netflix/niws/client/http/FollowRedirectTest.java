@@ -17,15 +17,6 @@
  */
 package com.netflix.niws.client.http;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.IOException;
-import java.net.URI;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
 import com.google.mockwebserver.MockResponse;
 import com.google.mockwebserver.MockWebServer;
 import com.netflix.client.ClientFactory;
@@ -35,6 +26,14 @@ import com.netflix.client.config.IClientConfig;
 import com.netflix.client.config.IClientConfigKey;
 import com.netflix.client.http.HttpRequest;
 import com.netflix.client.http.HttpResponse;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.io.IOException;
+import java.net.URI;
+
+import static org.junit.Assert.assertEquals;
 
 public class FollowRedirectTest {
     

@@ -18,42 +18,6 @@
 
 package com.netflix.ribbon.transport.netty.http;
 
-import io.netty.buffer.ByteBufAllocator;
-import io.netty.channel.ChannelOption;
-import io.netty.handler.codec.http.HttpHeaders;
-import io.netty.handler.codec.http.HttpMethod;
-import io.reactivex.netty.client.ClientMetricsEvent;
-import io.reactivex.netty.client.CompositePoolLimitDeterminationStrategy;
-import io.reactivex.netty.client.RxClient;
-import io.reactivex.netty.contexts.RxContexts;
-import io.reactivex.netty.contexts.http.HttpRequestIdProvider;
-import io.reactivex.netty.metrics.MetricEventsListener;
-import io.reactivex.netty.pipeline.PipelineConfigurator;
-import io.reactivex.netty.pipeline.ssl.DefaultFactories;
-import io.reactivex.netty.pipeline.ssl.SSLEngineFactory;
-import io.reactivex.netty.protocol.http.client.HttpClient;
-import io.reactivex.netty.protocol.http.client.HttpClientBuilder;
-import io.reactivex.netty.protocol.http.client.HttpClientRequest;
-import io.reactivex.netty.protocol.http.client.HttpClientResponse;
-import io.reactivex.netty.servo.http.HttpClientListener;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import javax.net.ssl.SSLEngine;
-
-import rx.Observable;
-import rx.functions.Func1;
-import rx.functions.Func2;
-
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 import com.netflix.client.RequestSpecificRetryHandler;
@@ -72,6 +36,38 @@ import com.netflix.loadbalancer.reactive.ExecutionListener;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import com.netflix.loadbalancer.reactive.ServerOperation;
 import com.netflix.ribbon.transport.netty.LoadBalancingRxClientWithPoolOptions;
+import io.netty.buffer.ByteBufAllocator;
+import io.netty.channel.ChannelOption;
+import io.netty.handler.codec.http.HttpHeaders;
+import io.netty.handler.codec.http.HttpMethod;
+import io.reactivex.netty.client.ClientMetricsEvent;
+import io.reactivex.netty.client.CompositePoolLimitDeterminationStrategy;
+import io.reactivex.netty.client.RxClient;
+import io.reactivex.netty.contexts.RxContexts;
+import io.reactivex.netty.contexts.http.HttpRequestIdProvider;
+import io.reactivex.netty.metrics.MetricEventsListener;
+import io.reactivex.netty.pipeline.PipelineConfigurator;
+import io.reactivex.netty.pipeline.ssl.DefaultFactories;
+import io.reactivex.netty.pipeline.ssl.SSLEngineFactory;
+import io.reactivex.netty.protocol.http.client.HttpClient;
+import io.reactivex.netty.protocol.http.client.HttpClientBuilder;
+import io.reactivex.netty.protocol.http.client.HttpClientRequest;
+import io.reactivex.netty.protocol.http.client.HttpClientResponse;
+import io.reactivex.netty.servo.http.HttpClientListener;
+import rx.Observable;
+import rx.functions.Func1;
+import rx.functions.Func2;
+
+import javax.net.ssl.SSLEngine;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A Netty HttpClient that can connect to different servers. Internally it caches the RxNetty's HttpClient, with each created with 

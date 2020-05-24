@@ -17,27 +17,14 @@
 */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNotSame;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import com.netflix.client.ClientFactory;
 import com.netflix.client.config.DefaultClientConfigImpl;
-import org.junit.Ignore;
+import com.netflix.config.ConfigurationManager;
 import org.junit.Test;
 
-import com.netflix.client.ClientFactory;
-import com.netflix.config.ConfigurationManager;
+import java.util.*;
+
+import static org.junit.Assert.*;
 
 public class ZoneAwareLoadBalancerTest {
 

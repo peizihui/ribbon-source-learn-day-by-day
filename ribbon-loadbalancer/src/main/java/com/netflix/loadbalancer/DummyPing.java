@@ -17,8 +17,6 @@
  */
 package com.netflix.loadbalancer;
 
-import com.netflix.client.config.IClientConfig;
-
 /**
  * Default simple implementation that marks the liveness of a Server
  * 

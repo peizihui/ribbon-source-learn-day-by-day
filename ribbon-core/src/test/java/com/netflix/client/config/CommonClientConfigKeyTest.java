@@ -1,10 +1,9 @@
 package com.netflix.client.config;
 
-import static org.junit.Assert.*;
-
+import com.google.common.collect.Sets;
 import org.junit.Test;
 
-import com.google.common.collect.Sets;
+import static org.junit.Assert.*;
 
 public class CommonClientConfigKeyTest {
     

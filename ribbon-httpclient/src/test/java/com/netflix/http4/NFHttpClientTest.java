@@ -17,10 +17,7 @@
 */
 package com.netflix.http4;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.IOException;
-
+import com.netflix.client.testutil.MockHttpServer;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
@@ -34,7 +31,9 @@ import org.junit.ClassRule;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.netflix.client.testutil.MockHttpServer;
+import java.io.IOException;
+
+import static org.junit.Assert.assertTrue;
 
 public class NFHttpClientTest {
     @ClassRule

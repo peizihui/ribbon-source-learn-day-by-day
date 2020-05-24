@@ -21,9 +21,7 @@ import com.netflix.client.RetryHandler;
 import com.netflix.client.config.DefaultClientConfigImpl;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
+import static org.junit.Assert.*;
 
 /**
  * @author Allen Wang

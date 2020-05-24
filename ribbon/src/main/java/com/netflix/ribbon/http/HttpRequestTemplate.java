@@ -15,7 +15,6 @@
  */
 package com.netflix.ribbon.http;
 
-import com.netflix.ribbon.transport.netty.LoadBalancingRxClient;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixCommandKey;
 import com.netflix.hystrix.HystrixCommandProperties;
@@ -27,6 +26,7 @@ import com.netflix.ribbon.ResourceGroup.TemplateBuilder;
 import com.netflix.ribbon.ResponseValidator;
 import com.netflix.ribbon.hystrix.FallbackHandler;
 import com.netflix.ribbon.template.ParsedTemplate;
+import com.netflix.ribbon.transport.netty.LoadBalancingRxClient;
 import io.netty.buffer.ByteBuf;
 import io.netty.handler.codec.http.DefaultHttpHeaders;
 import io.netty.handler.codec.http.HttpHeaders;

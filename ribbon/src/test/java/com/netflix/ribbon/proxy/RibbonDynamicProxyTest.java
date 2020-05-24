@@ -37,8 +37,8 @@ import java.util.Map;
 import static com.netflix.ribbon.proxy.Utils.methodByName;
 import static org.easymock.EasyMock.anyObject;
 import static org.easymock.EasyMock.expect;
-import static org.powermock.api.easymock.PowerMock.*;
 import static org.junit.Assert.*;
+import static org.powermock.api.easymock.PowerMock.*;
 
 /**
  * @author Tomasz Bak

@@ -16,14 +16,6 @@
 
 package com.netflix.ribbon.examples.rx;
 
-import java.nio.charset.Charset;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import com.netflix.ribbon.examples.rx.common.Movie;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.UnpooledByteBufAllocator;
@@ -39,6 +31,14 @@ import io.reactivex.netty.protocol.http.server.HttpServerResponse;
 import io.reactivex.netty.protocol.http.server.RequestHandler;
 import rx.Observable;
 import rx.functions.Func1;
+
+import java.nio.charset.Charset;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.lang.String.*;
 

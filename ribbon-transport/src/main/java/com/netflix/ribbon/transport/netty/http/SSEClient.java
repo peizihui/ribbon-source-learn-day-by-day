@@ -17,16 +17,15 @@
  */
 package com.netflix.ribbon.transport.netty.http;
 
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.client.config.IClientConfigKey;
+import com.netflix.loadbalancer.Server;
 import io.netty.channel.ChannelOption;
 import io.reactivex.netty.client.RxClient;
 import io.reactivex.netty.protocol.http.client.HttpClient;
 import io.reactivex.netty.protocol.http.client.HttpClientBuilder;
 import io.reactivex.netty.protocol.text.sse.ServerSentEvent;
 import rx.functions.Func1;
-
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.client.config.IClientConfigKey;
-import com.netflix.loadbalancer.Server;
 
 public class SSEClient<I> extends LoadBalancingHttpClient<I, ServerSentEvent> {
     

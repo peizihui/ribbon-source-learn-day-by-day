@@ -1,20 +1,18 @@
 package com.netflix.ribbon.examples.netty.http;
 
-import io.netty.buffer.ByteBuf;
-import io.reactivex.netty.protocol.http.client.HttpClientRequest;
-import io.reactivex.netty.protocol.http.client.HttpClientResponse;
-
-import java.util.List;
-import java.util.concurrent.CountDownLatch;
-
-import rx.Observer;
-
 import com.google.common.collect.Lists;
-import com.netflix.ribbon.transport.netty.RibbonTransport;
-import com.netflix.ribbon.transport.netty.http.LoadBalancingHttpClient;
 import com.netflix.loadbalancer.BaseLoadBalancer;
 import com.netflix.loadbalancer.LoadBalancerBuilder;
 import com.netflix.loadbalancer.Server;
+import com.netflix.ribbon.transport.netty.RibbonTransport;
+import com.netflix.ribbon.transport.netty.http.LoadBalancingHttpClient;
+import io.netty.buffer.ByteBuf;
+import io.reactivex.netty.protocol.http.client.HttpClientRequest;
+import io.reactivex.netty.protocol.http.client.HttpClientResponse;
+import rx.Observer;
+
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 
 public class LoadBalancingExample {

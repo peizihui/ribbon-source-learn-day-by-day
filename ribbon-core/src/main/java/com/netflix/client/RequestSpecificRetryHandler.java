@@ -8,7 +8,6 @@ import com.netflix.client.config.IClientConfig;
 import javax.annotation.Nullable;
 import java.net.SocketException;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Implementation of RetryHandler created for each request which allows for request

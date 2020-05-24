@@ -1,10 +1,10 @@
 package com.netflix.serialization;
 
+import com.google.common.base.Preconditions;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-
-import com.google.common.base.Preconditions;
 
 public class SerializationUtils {
 

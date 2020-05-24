@@ -17,21 +17,20 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.*;
+import com.google.common.collect.Lists;
+import com.netflix.client.config.CommonClientConfigKey;
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.client.config.IClientConfig;
+import com.netflix.client.testutil.MockHttpServer;
+import org.junit.ClassRule;
+import org.junit.Test;
 
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.junit.ClassRule;
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
-import com.netflix.client.config.CommonClientConfigKey;
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.client.testutil.MockHttpServer;
+import static org.junit.Assert.*;
 
 public class DynamicServerListLoadBalancerTest {
     @ClassRule

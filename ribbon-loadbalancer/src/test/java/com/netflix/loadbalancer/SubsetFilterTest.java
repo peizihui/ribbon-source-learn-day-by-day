@@ -15,23 +15,21 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import com.google.common.collect.Lists;
+import com.google.common.util.concurrent.Uninterruptibles;
+import com.netflix.client.ClientFactory;
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.config.ConfigurationManager;
+import org.apache.commons.configuration.Configuration;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import com.google.common.util.concurrent.Uninterruptibles;
-import org.apache.commons.configuration.Configuration;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
-import com.netflix.client.ClientFactory;
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.config.ConfigurationManager;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class SubsetFilterTest {
     

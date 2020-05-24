@@ -20,12 +20,11 @@ package com.netflix.ribbon.transport.netty;
 import com.google.common.collect.Lists;
 import com.netflix.client.DefaultLoadBalancerRetryHandler;
 import com.netflix.client.config.IClientConfig;
-import com.netflix.ribbon.transport.netty.udp.LoadBalancingUdpClient;
 import com.netflix.loadbalancer.ILoadBalancer;
+import com.netflix.loadbalancer.Server;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import com.netflix.loadbalancer.reactive.ServerOperation;
-import com.netflix.loadbalancer.Server;
-
+import com.netflix.ribbon.transport.netty.udp.LoadBalancingUdpClient;
 import io.netty.channel.socket.DatagramPacket;
 import io.reactivex.netty.channel.ObservableConnection;
 import io.reactivex.netty.client.RxClient;

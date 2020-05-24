@@ -17,17 +17,6 @@
 */
 package com.netflix.niws.loadbalancer;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.netflix.config.ConfigurationBasedDeploymentContext;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import com.netflix.appinfo.AmazonInfo;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.appinfo.InstanceInfo.Builder;
@@ -38,6 +27,14 @@ import com.netflix.loadbalancer.AvailabilityFilteringRule;
 import com.netflix.loadbalancer.DynamicServerListLoadBalancer;
 import com.netflix.loadbalancer.LoadBalancerStats;
 import com.netflix.loadbalancer.ZoneAffinityServerListFilter;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class DefaultNIWSServerListFilterTest {
     @BeforeClass

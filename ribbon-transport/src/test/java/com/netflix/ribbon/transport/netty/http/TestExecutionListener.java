@@ -1,10 +1,10 @@
 package com.netflix.ribbon.transport.netty.http;
 
+import com.netflix.client.config.IClientConfig;
+import com.netflix.loadbalancer.Server;
 import com.netflix.loadbalancer.reactive.ExecutionContext;
 import com.netflix.loadbalancer.reactive.ExecutionInfo;
 import com.netflix.loadbalancer.reactive.ExecutionListener;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.loadbalancer.Server;
 import io.netty.buffer.ByteBuf;
 import io.reactivex.netty.protocol.http.client.HttpClientRequest;
 import io.reactivex.netty.protocol.http.client.HttpClientResponse;

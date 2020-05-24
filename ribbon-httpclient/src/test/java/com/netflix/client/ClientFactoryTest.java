@@ -17,21 +17,18 @@
 */
 package com.netflix.client;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
-import java.util.HashSet;
-import java.util.Set;
-
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import com.netflix.config.ConfigurationManager;
 import com.netflix.loadbalancer.ConfigurationBasedServerList;
 import com.netflix.loadbalancer.DynamicServerListLoadBalancer;
 import com.netflix.loadbalancer.Server;
 import com.netflix.niws.client.http.RestClient;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import static org.junit.Assert.*;
 
 public class ClientFactoryTest {
 	

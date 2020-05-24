@@ -1,13 +1,5 @@
 package com.netflix.ribbon;
 
-import io.netty.buffer.ByteBuf;
-import io.reactivex.netty.protocol.http.client.HttpClientResponse;
-
-import java.util.Map;
-
-import rx.Observable;
-import rx.functions.Func1;
-
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.HystrixInvokableInfo;
@@ -15,6 +7,12 @@ import com.netflix.hystrix.HystrixObservableCommand;
 import com.netflix.ribbon.http.HttpRequestTemplate;
 import com.netflix.ribbon.http.HttpResourceGroup;
 import com.netflix.ribbon.hystrix.FallbackHandler;
+import io.netty.buffer.ByteBuf;
+import io.reactivex.netty.protocol.http.client.HttpClientResponse;
+import rx.Observable;
+import rx.functions.Func1;
+
+import java.util.Map;
 
 
 public class RibbonExamples {

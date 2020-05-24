@@ -16,10 +16,9 @@
 
 package com.netflix.ribbon.proxy;
 
-import org.junit.Test;
-
 import com.netflix.ribbon.proxy.ClassTemplate;
 import com.netflix.ribbon.proxy.RibbonProxyException;
+import org.junit.Test;
 
 import static com.netflix.ribbon.proxy.sample.MovieServiceInterfaces.*;
 import static org.junit.Assert.*;

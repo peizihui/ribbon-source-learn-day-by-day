@@ -22,7 +22,6 @@ import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.ILoadBalancer;
 import com.netflix.servo.monitor.Monitors;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

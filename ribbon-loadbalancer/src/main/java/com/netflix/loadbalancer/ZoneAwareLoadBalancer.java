@@ -18,9 +18,7 @@
 package com.netflix.loadbalancer;
 
 import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Preconditions;
 import com.netflix.client.ClientFactory;
-import com.netflix.client.config.ClientConfigFactory;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.client.config.IClientConfigKey;
@@ -28,11 +26,7 @@ import com.netflix.client.config.Property;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**

@@ -18,14 +18,13 @@
  */
 package com.netflix.loadbalancer;
 
-import java.util.Iterator;
-import java.util.List;
-
-import javax.annotation.Nullable;
-
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Lists;
+
+import javax.annotation.Nullable;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * A predicate that is composed from one or more predicates in "AND" relationship.

@@ -23,7 +23,6 @@ import com.netflix.client.config.DefaultClientConfigImpl;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.discovery.DiscoveryClient;
 import com.netflix.discovery.DiscoveryManager;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -37,9 +36,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import java.util.List;
 
 import static org.easymock.EasyMock.expect;
-import static org.powermock.api.easymock.PowerMock.createMock;
-import static org.powermock.api.easymock.PowerMock.replay;
-import static org.powermock.api.easymock.PowerMock.verify;
+import static org.powermock.api.easymock.PowerMock.*;
 
 
 /**

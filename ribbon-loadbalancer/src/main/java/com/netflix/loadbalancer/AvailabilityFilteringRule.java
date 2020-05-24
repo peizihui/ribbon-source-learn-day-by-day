@@ -17,12 +17,12 @@
 */
 package com.netflix.loadbalancer;
 
-import java.util.List;
-
 import com.google.common.collect.Collections2;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.servo.annotations.DataSourceType;
 import com.netflix.servo.annotations.Monitor;
+
+import java.util.List;
 
 /**
  * A load balancer rule that filters out servers that:

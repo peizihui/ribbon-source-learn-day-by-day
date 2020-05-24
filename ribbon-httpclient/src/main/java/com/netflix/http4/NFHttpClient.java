@@ -18,11 +18,7 @@
 package com.netflix.http4;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.netflix.client.config.ClientConfigFactory;
-import com.netflix.client.config.CommonClientConfigKey;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.client.config.IClientConfigKey;
-import com.netflix.client.config.Property;
+import com.netflix.client.config.*;
 import com.netflix.servo.annotations.DataSourceType;
 import com.netflix.servo.annotations.Monitor;
 import com.netflix.servo.monitor.Monitors;

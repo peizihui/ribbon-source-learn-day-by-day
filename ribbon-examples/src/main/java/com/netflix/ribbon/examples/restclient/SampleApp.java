@@ -18,14 +18,14 @@
 
 package com.netflix.ribbon.examples.restclient;
 
-import java.net.URI;
-
 import com.netflix.client.ClientFactory;
 import com.netflix.client.http.HttpRequest;
 import com.netflix.client.http.HttpResponse;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
 import com.netflix.niws.client.http.RestClient;
+
+import java.net.URI;
 
 public class SampleApp {
 	public static void main(String[] args) throws Exception {

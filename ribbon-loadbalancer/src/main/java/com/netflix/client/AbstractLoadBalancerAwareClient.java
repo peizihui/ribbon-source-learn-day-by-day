@@ -17,10 +17,6 @@
 */
 package com.netflix.client;
 
-import java.net.URI;
-
-import rx.Observable;
-
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.AvailabilityFilteringRule;
@@ -29,6 +25,9 @@ import com.netflix.loadbalancer.LoadBalancerContext;
 import com.netflix.loadbalancer.Server;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import com.netflix.loadbalancer.reactive.ServerOperation;
+import rx.Observable;
+
+import java.net.URI;
 
 /**
  * Abstract class that provides the integration of client with load balancers.

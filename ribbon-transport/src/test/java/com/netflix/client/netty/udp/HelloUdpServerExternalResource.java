@@ -6,19 +6,17 @@ import io.reactivex.netty.RxNetty;
 import io.reactivex.netty.channel.ConnectionHandler;
 import io.reactivex.netty.channel.ObservableConnection;
 import io.reactivex.netty.protocol.udp.server.UdpServer;
+import org.junit.rules.ExternalResource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import rx.Observable;
+import rx.functions.Func1;
 
 import java.net.DatagramSocket;
 import java.net.InetSocketAddress;
 import java.net.SocketException;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
-
-import org.junit.rules.ExternalResource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import rx.Observable;
-import rx.functions.Func1;
 
 public class HelloUdpServerExternalResource extends ExternalResource {
     private static final Logger LOG = LoggerFactory.getLogger(HelloUdpServerExternalResource.class);

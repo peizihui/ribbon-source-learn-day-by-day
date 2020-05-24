@@ -1,11 +1,10 @@
 package com.netflix.ribbon.hystrix;
 
-import java.util.Map;
-
-import rx.Observable;
-
 import com.netflix.hystrix.HystrixObservableCommand;
 import com.netflix.ribbon.CacheProvider;
+import rx.Observable;
+
+import java.util.Map;
 
 /**
  * @author Tomasz Bak

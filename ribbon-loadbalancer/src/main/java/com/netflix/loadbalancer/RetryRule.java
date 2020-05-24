@@ -17,8 +17,6 @@
 */
 package com.netflix.loadbalancer;
 
-import com.netflix.client.config.IClientConfig;
-
 /**
  * Given that
  * {@link IRule} can be cascaded, this {@link RetryRule} class allows adding a retry logic to an existing Rule.

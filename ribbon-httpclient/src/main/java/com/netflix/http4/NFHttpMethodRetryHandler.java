@@ -22,8 +22,8 @@ package com.netflix.http4;
  * 
  * Provides a configurable override for the number of retries. Also waits for a configurable time before retry.
  */
-import java.io.IOException;
 
+import com.netflix.servo.monitor.DynamicCounter;
 import org.apache.http.HttpRequest;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
@@ -32,7 +32,7 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.netflix.servo.monitor.DynamicCounter;
+import java.io.IOException;
 
 public class NFHttpMethodRetryHandler extends DefaultHttpRequestRetryHandler {
 	private static final String RETRY_COUNTER = "PLATFORM:NFttpClient:Retries:";

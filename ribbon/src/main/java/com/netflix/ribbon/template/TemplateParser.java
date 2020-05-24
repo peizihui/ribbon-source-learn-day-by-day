@@ -15,11 +15,11 @@
  */
 package com.netflix.ribbon.template;
 
+import com.google.common.collect.Maps;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import com.google.common.collect.Maps;
 
 /**
  * Created by mcohen on 5/1/14.

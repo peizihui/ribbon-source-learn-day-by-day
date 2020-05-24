@@ -17,8 +17,6 @@
  */
 package com.netflix.loadbalancer;
 
-import com.netflix.client.config.IClientConfig;
-
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 

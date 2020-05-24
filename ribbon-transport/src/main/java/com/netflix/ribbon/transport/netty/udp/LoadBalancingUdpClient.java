@@ -19,9 +19,9 @@ package com.netflix.ribbon.transport.netty.udp;
 
 import com.netflix.client.RetryHandler;
 import com.netflix.client.config.IClientConfig;
-import com.netflix.ribbon.transport.netty.LoadBalancingRxClient;
 import com.netflix.loadbalancer.ILoadBalancer;
 import com.netflix.loadbalancer.Server;
+import com.netflix.ribbon.transport.netty.LoadBalancingRxClient;
 import io.reactivex.netty.RxNetty;
 import io.reactivex.netty.client.ClientMetricsEvent;
 import io.reactivex.netty.client.RxClient;

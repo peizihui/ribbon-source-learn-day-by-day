@@ -17,7 +17,6 @@
  */
 package com.netflix.loadbalancer;
 
-import com.google.common.base.Preconditions;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.client.config.IClientConfigKey;

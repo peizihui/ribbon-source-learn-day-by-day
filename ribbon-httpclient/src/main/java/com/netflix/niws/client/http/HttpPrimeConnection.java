@@ -17,19 +17,17 @@
  */
 package com.netflix.niws.client.http;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.netflix.client.IPrimeConnection;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.http4.NFHttpClient;
 import com.netflix.http4.NFHttpClientFactory;
 import com.netflix.loadbalancer.Server;
-
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.params.HttpConnectionParams;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * An implementation of {@link IPrimeConnection} using Apache HttpClient.

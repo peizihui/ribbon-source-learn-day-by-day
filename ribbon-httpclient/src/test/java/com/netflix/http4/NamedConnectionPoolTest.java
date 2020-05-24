@@ -17,10 +17,12 @@
  */
 package com.netflix.http4;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
+import com.netflix.client.ClientFactory;
+import com.netflix.client.config.CommonClientConfigKey;
+import com.netflix.client.http.HttpRequest;
+import com.netflix.client.testutil.MockHttpServer;
+import com.netflix.config.ConfigurationManager;
+import com.netflix.niws.client.http.RestClient;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
@@ -28,12 +30,7 @@ import org.apache.http.util.EntityUtils;
 import org.junit.ClassRule;
 import org.junit.Test;
 
-import com.netflix.client.ClientFactory;
-import com.netflix.client.config.CommonClientConfigKey;
-import com.netflix.client.http.HttpRequest;
-import com.netflix.client.testutil.MockHttpServer;
-import com.netflix.config.ConfigurationManager;
-import com.netflix.niws.client.http.RestClient;
+import static org.junit.Assert.*;
 
 public class NamedConnectionPoolTest {
     

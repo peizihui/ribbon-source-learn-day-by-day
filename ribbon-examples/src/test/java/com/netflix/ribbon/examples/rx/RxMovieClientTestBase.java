@@ -17,7 +17,6 @@ package com.netflix.ribbon.examples.rx;
 
 import io.netty.buffer.ByteBuf;
 import io.reactivex.netty.protocol.http.server.HttpServer;
-
 import org.junit.After;
 import org.junit.Before;
 

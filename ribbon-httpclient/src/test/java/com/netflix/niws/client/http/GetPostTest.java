@@ -17,27 +17,24 @@
 */
 package com.netflix.niws.client.http;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import com.netflix.client.ClientFactory;
+import com.netflix.client.http.HttpRequest;
+import com.netflix.client.http.HttpRequest.Verb;
+import com.netflix.client.http.HttpResponse;
+import com.sun.jersey.api.container.httpserver.HttpServerFactory;
+import com.sun.jersey.api.core.PackagesResourceConfig;
+import com.sun.jersey.core.util.MultivaluedMapImpl;
+import com.sun.net.httpserver.HttpServer;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.net.URI;
 import java.util.Random;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import com.netflix.client.ClientFactory;
-import com.netflix.client.http.HttpRequest;
-import com.netflix.client.http.HttpResponse;
-import com.netflix.client.http.HttpRequest.Verb;
-import com.sun.jersey.api.container.httpserver.HttpServerFactory;
-import com.sun.jersey.api.core.PackagesResourceConfig;
-import com.sun.jersey.core.util.MultivaluedMapImpl;
-import com.sun.net.httpserver.HttpServer;
+import static org.junit.Assert.*;
 
 public class GetPostTest {
 

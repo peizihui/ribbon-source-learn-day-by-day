@@ -20,10 +20,10 @@ package com.netflix.ribbon.transport.netty.udp;
 
 import com.google.common.collect.Lists;
 import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.ribbon.transport.netty.MyUDPClient;
-import com.netflix.ribbon.transport.netty.RibbonTransport;
 import com.netflix.loadbalancer.BaseLoadBalancer;
 import com.netflix.loadbalancer.Server;
+import com.netflix.ribbon.transport.netty.MyUDPClient;
+import com.netflix.ribbon.transport.netty.RibbonTransport;
 import io.netty.channel.socket.DatagramPacket;
 import io.reactivex.netty.channel.ObservableConnection;
 import io.reactivex.netty.client.RxClient;
@@ -37,9 +37,7 @@ import java.net.SocketException;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeoutException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 /**
  * Created by awang on 8/5/14.

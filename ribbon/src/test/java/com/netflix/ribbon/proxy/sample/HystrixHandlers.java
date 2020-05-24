@@ -21,7 +21,6 @@ import com.netflix.ribbon.ServerError;
 import com.netflix.ribbon.UnsuccessfulResponseException;
 import com.netflix.ribbon.http.HttpResponseValidator;
 import com.netflix.ribbon.hystrix.FallbackHandler;
-
 import io.netty.buffer.ByteBuf;
 import io.reactivex.netty.protocol.http.client.HttpClientResponse;
 import rx.Observable;

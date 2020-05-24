@@ -20,11 +20,7 @@ import com.netflix.ribbon.DefaultResourceFactory;
 import com.netflix.ribbon.RibbonResourceFactory;
 import com.netflix.ribbon.RibbonTransportFactory;
 import com.netflix.ribbon.http.HttpResourceGroup;
-import com.netflix.ribbon.proxy.processor.AnnotationProcessorsProvider;
-import com.netflix.ribbon.proxy.processor.CacheProviderAnnotationProcessor;
-import com.netflix.ribbon.proxy.processor.ClientPropertiesProcessor;
-import com.netflix.ribbon.proxy.processor.HttpAnnotationProcessor;
-import com.netflix.ribbon.proxy.processor.HystrixAnnotationProcessor;
+import com.netflix.ribbon.proxy.processor.*;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

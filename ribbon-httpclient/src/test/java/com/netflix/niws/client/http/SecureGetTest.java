@@ -17,19 +17,6 @@
  */
 package com.netflix.niws.client.http;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.net.URI;
-
-import org.apache.commons.configuration.AbstractConfiguration;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import com.netflix.client.ClientFactory;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.http.HttpRequest;
@@ -39,6 +26,16 @@ import com.netflix.config.ConfigurationManager;
 import com.sun.jersey.api.client.ClientHandlerException;
 import com.sun.jersey.core.util.Base64;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
+import org.apache.commons.configuration.AbstractConfiguration;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.net.URI;
+
+import static org.junit.Assert.*;
 
 /**
  *

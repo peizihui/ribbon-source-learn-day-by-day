@@ -17,15 +17,14 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.*;
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.config.ConfigurationManager;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
-
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.config.ConfigurationManager;
+import static org.junit.Assert.*;
 
 public class ConfigurationBasedServerListTest {
 

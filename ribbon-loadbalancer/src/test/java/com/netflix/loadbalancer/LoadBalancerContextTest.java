@@ -17,14 +17,13 @@
  */
 package com.netflix.loadbalancer;
 
-import static org.junit.Assert.assertEquals;
+import com.netflix.client.config.IClientConfig;
+import org.junit.Test;
 
 import java.net.URI;
 import java.net.URLEncoder;
 
-import org.junit.Test;
-
-import com.netflix.client.config.IClientConfig;
+import static org.junit.Assert.assertEquals;
 
 public class LoadBalancerContextTest {
     

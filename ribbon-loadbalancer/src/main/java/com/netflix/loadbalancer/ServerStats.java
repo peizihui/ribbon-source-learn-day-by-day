@@ -18,9 +18,6 @@
 package com.netflix.loadbalancer;
 
 import com.google.common.annotations.VisibleForTesting;
-
-import com.netflix.client.config.CommonClientConfigKey;
-import com.netflix.client.config.IClientConfigKey;
 import com.netflix.client.config.Property;
 import com.netflix.client.config.UnboxedIntProperty;
 import com.netflix.servo.annotations.DataSourceType;
@@ -31,7 +28,6 @@ import com.netflix.stats.distribution.Distribution;
 import com.netflix.util.MeasuredRate;
 
 import java.util.Date;
-import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 

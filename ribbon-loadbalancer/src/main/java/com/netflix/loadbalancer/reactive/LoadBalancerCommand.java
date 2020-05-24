@@ -17,22 +17,6 @@
  */
 package com.netflix.loadbalancer.reactive;
 
-import java.net.URI;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import rx.Observable;
-import rx.Observable.OnSubscribe;
-import rx.Observer;
-import rx.Subscriber;
-import rx.functions.Func1;
-import rx.functions.Func2;
-
 import com.netflix.client.ClientException;
 import com.netflix.client.RetryHandler;
 import com.netflix.client.config.IClientConfig;
@@ -42,6 +26,20 @@ import com.netflix.loadbalancer.Server;
 import com.netflix.loadbalancer.ServerStats;
 import com.netflix.loadbalancer.reactive.ExecutionListener.AbortExecutionException;
 import com.netflix.servo.monitor.Stopwatch;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import rx.Observable;
+import rx.Observable.OnSubscribe;
+import rx.Observer;
+import rx.Subscriber;
+import rx.functions.Func1;
+import rx.functions.Func2;
+
+import java.net.URI;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * A command that is used to produce the Observable from the load balancer execution. The load balancer is responsible for

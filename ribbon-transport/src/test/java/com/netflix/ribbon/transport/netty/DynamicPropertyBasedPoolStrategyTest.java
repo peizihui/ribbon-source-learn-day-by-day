@@ -17,11 +17,10 @@
  */
 package com.netflix.ribbon.transport.netty;
 
-import static org.junit.Assert.*;
-
+import com.netflix.config.ConfigurationManager;
 import org.junit.Test;
 
-import com.netflix.config.ConfigurationManager;
+import static org.junit.Assert.*;
 
 public class DynamicPropertyBasedPoolStrategyTest {
     @Test

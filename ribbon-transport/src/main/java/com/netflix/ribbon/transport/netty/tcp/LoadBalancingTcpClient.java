@@ -17,8 +17,13 @@
  */
 package com.netflix.ribbon.transport.netty.tcp;
 
-import java.util.concurrent.ScheduledExecutorService;
-
+import com.netflix.client.RetryHandler;
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.client.config.IClientConfig;
+import com.netflix.client.config.IClientConfigKey;
+import com.netflix.loadbalancer.ILoadBalancer;
+import com.netflix.loadbalancer.Server;
+import com.netflix.ribbon.transport.netty.LoadBalancingRxClientWithPoolOptions;
 import io.netty.channel.ChannelOption;
 import io.reactivex.netty.RxNetty;
 import io.reactivex.netty.client.ClientBuilder;
@@ -28,13 +33,7 @@ import io.reactivex.netty.metrics.MetricEventsListener;
 import io.reactivex.netty.pipeline.PipelineConfigurator;
 import io.reactivex.netty.servo.tcp.TcpClientListener;
 
-import com.netflix.client.RetryHandler;
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.client.config.IClientConfigKey;
-import com.netflix.ribbon.transport.netty.LoadBalancingRxClientWithPoolOptions;
-import com.netflix.loadbalancer.ILoadBalancer;
-import com.netflix.loadbalancer.Server;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class LoadBalancingTcpClient<I, O> extends LoadBalancingRxClientWithPoolOptions<I, O, RxClient<I,O>> implements RxClient<I, O> {
 

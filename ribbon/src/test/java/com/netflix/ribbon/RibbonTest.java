@@ -23,17 +23,14 @@ import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import com.netflix.ribbon.http.HttpRequestTemplate;
 import com.netflix.ribbon.http.HttpResourceGroup;
 import com.netflix.ribbon.hystrix.FallbackHandler;
-
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.reactivex.netty.protocol.http.client.HttpClientResponse;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
-
 import rx.Observable;
 import rx.functions.Action0;
 import rx.functions.Action1;

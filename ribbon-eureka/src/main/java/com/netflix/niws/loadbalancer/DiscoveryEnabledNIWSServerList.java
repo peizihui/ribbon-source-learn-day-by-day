@@ -17,10 +17,6 @@
 */
 package com.netflix.niws.loadbalancer;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.appinfo.InstanceInfo.InstanceStatus;
 import com.netflix.client.config.ClientConfigFactory;
@@ -36,6 +32,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Provider;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The server list class that fetches the server information from Eureka client. ServerList is used by

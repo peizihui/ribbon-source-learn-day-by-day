@@ -18,19 +18,6 @@
 package com.netflix.niws.client.http;
 
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-
-import java.net.URI;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
-import org.junit.ClassRule;
-import org.junit.Test;
-
 import com.netflix.client.ClientFactory;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.http.HttpRequest;
@@ -39,6 +26,15 @@ import com.netflix.client.testutil.MockHttpServer;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.loadbalancer.BaseLoadBalancer;
 import com.netflix.loadbalancer.Server;
+import org.junit.ClassRule;
+import org.junit.Test;
+
+import java.net.URI;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+import static org.junit.Assert.*;
 
 
 public class RestClientTest {

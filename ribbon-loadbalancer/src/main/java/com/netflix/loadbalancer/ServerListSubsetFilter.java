@@ -23,11 +23,7 @@ import com.netflix.client.config.IClientConfig;
 import com.netflix.client.config.IClientConfigKey;
 import com.netflix.client.config.Property;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 /**
  * A server list filter that limits the number of the servers used by the load balancer to be the subset of all servers.

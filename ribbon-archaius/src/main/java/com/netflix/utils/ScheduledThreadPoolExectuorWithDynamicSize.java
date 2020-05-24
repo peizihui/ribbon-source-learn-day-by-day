@@ -18,10 +18,10 @@
 
 package com.netflix.utils;
 
+import com.netflix.config.DynamicIntProperty;
+
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
-
-import com.netflix.config.DynamicIntProperty;
 
 /**
  * A {@link ScheduledThreadPoolExecutor} whose core size can be dynamically changed by a given {@link DynamicIntProperty} and 

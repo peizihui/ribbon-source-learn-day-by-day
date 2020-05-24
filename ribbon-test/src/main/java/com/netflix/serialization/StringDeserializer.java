@@ -1,12 +1,12 @@
 package com.netflix.serialization;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
 import com.google.common.base.Charsets;
 import com.google.common.io.CharStreams;
 import com.google.common.io.Closeables;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class StringDeserializer implements Deserializer<String> {
     

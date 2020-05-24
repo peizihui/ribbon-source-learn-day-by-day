@@ -18,13 +18,12 @@
 package com.netflix.loadbalancer;
 
 
-import static org.junit.Assert.*;
+import com.google.common.collect.Lists;
+import org.junit.Test;
 
 import java.util.List;
 
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
+import static org.junit.Assert.*;
 
 public class BestAvailableRuleTest {
     

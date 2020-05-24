@@ -1,16 +1,14 @@
 package com.netflix.ribbon.examples.rx.proxy;
 
-import io.netty.buffer.ByteBuf;
-
-import javax.inject.Inject;
-
-import rx.Observable;
-
 import com.google.inject.Singleton;
 import com.netflix.ribbon.examples.rx.AbstractRxMovieClient;
 import com.netflix.ribbon.examples.rx.common.Movie;
 import com.netflix.ribbon.examples.rx.proxy.MovieService;
 import com.netflix.ribbon.proxy.ProxyLifeCycle;
+import io.netty.buffer.ByteBuf;
+import rx.Observable;
+
+import javax.inject.Inject;
 
 @Singleton
 public class RxMovieProxyExample extends AbstractRxMovieClient {

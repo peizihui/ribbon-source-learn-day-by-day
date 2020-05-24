@@ -17,13 +17,9 @@
  */
 package com.netflix.loadbalancer;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
-
 import com.netflix.client.config.IClientConfig;
+
+import java.util.*;
 
 /**
  * A rule that uses the a {@link CompositePredicate} to filter servers based on zone and availability. The primary predicate is composed of

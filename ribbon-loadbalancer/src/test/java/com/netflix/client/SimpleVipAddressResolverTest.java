@@ -17,11 +17,10 @@
  */
 package com.netflix.client;
 
-import static org.junit.Assert.*;
-
+import com.netflix.config.ConfigurationManager;
 import org.junit.Test;
 
-import com.netflix.config.ConfigurationManager;
+import static org.junit.Assert.*;
 
 public class SimpleVipAddressResolverTest {
 	@Test

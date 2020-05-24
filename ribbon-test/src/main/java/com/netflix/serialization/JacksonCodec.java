@@ -1,17 +1,16 @@
 package com.netflix.serialization;
 
+import com.google.common.base.Charsets;
+import com.google.common.io.CharStreams;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.ObjectWriter;
+import org.codehaus.jackson.type.TypeReference;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.lang.reflect.Type;
-
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.ObjectWriter;
-import org.codehaus.jackson.type.TypeReference;
-
-import com.google.common.base.Charsets;
-import com.google.common.io.CharStreams;
 
 public class JacksonCodec<T extends Object> implements Serializer<T>, Deserializer<T> {
     

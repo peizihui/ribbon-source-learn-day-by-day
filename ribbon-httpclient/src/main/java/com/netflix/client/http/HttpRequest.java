@@ -17,16 +17,15 @@
  */
 package com.netflix.client.http;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Collection;
-import java.util.Map;
-
-
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import com.netflix.client.ClientRequest;
 import com.netflix.client.config.IClientConfig;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * Request for HTTP communication.

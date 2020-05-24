@@ -15,11 +15,10 @@
  */
 package com.netflix.ribbon.hystrix;
 
-import java.util.Map;
-
 import com.netflix.hystrix.HystrixInvokableInfo;
-
 import rx.Observable;
+
+import java.util.Map;
 
 /**
  * 

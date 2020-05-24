@@ -17,12 +17,26 @@
  */
 package com.netflix.ribbon.transport.netty.http;
 
-import static com.netflix.ribbon.testutils.TestUtils.waitUntilTrueOrTimeout;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import com.google.common.collect.Lists;
+import com.google.mockwebserver.MockResponse;
+import com.google.mockwebserver.MockWebServer;
+import com.netflix.client.ClientException;
+import com.netflix.client.RequestSpecificRetryHandler;
+import com.netflix.client.RetryHandler;
+import com.netflix.client.config.CommonClientConfigKey;
+import com.netflix.client.config.DefaultClientConfigImpl;
+import com.netflix.client.config.IClientConfig;
+import com.netflix.client.config.IClientConfigKey;
+import com.netflix.loadbalancer.*;
+import com.netflix.ribbon.test.resources.EmbeddedResources;
+import com.netflix.ribbon.test.resources.EmbeddedResources.Person;
+import com.netflix.ribbon.transport.netty.RibbonTransport;
+import com.netflix.serialization.JacksonCodec;
+import com.netflix.serialization.SerializationUtils;
+import com.netflix.serialization.TypeDef;
+import com.sun.jersey.api.container.httpserver.HttpServerFactory;
+import com.sun.jersey.api.core.PackagesResourceConfig;
+import com.sun.net.httpserver.HttpServer;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufInputStream;
 import io.netty.buffer.Unpooled;
@@ -35,6 +49,15 @@ import io.reactivex.netty.protocol.http.client.HttpClientRequest;
 import io.reactivex.netty.protocol.http.client.HttpClientResponse;
 import io.reactivex.netty.protocol.text.sse.ServerSentEvent;
 import io.reactivex.netty.servo.http.HttpClientListener;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
+import rx.Observable;
+import rx.functions.Action0;
+import rx.functions.Action1;
+import rx.functions.Func0;
+import rx.functions.Func1;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -46,42 +69,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.codehaus.jackson.map.ObjectMapper;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
-
-import rx.Observable;
-import rx.functions.Action0;
-import rx.functions.Action1;
-import rx.functions.Func0;
-import rx.functions.Func1;
-
-import com.google.common.collect.Lists;
-import com.google.mockwebserver.MockResponse;
-import com.google.mockwebserver.MockWebServer;
-import com.netflix.client.ClientException;
-import com.netflix.client.RequestSpecificRetryHandler;
-import com.netflix.client.RetryHandler;
-import com.netflix.client.config.CommonClientConfigKey;
-import com.netflix.client.config.DefaultClientConfigImpl;
-import com.netflix.client.config.IClientConfig;
-import com.netflix.client.config.IClientConfigKey;
-import com.netflix.loadbalancer.AvailabilityFilteringRule;
-import com.netflix.loadbalancer.BaseLoadBalancer;
-import com.netflix.loadbalancer.DummyPing;
-import com.netflix.loadbalancer.LoadBalancerBuilder;
-import com.netflix.loadbalancer.Server;
-import com.netflix.loadbalancer.ServerStats;
-import com.netflix.ribbon.test.resources.EmbeddedResources;
-import com.netflix.ribbon.test.resources.EmbeddedResources.Person;
-import com.netflix.ribbon.transport.netty.RibbonTransport;
-import com.netflix.serialization.JacksonCodec;
-import com.netflix.serialization.SerializationUtils;
-import com.netflix.serialization.TypeDef;
-import com.sun.jersey.api.container.httpserver.HttpServerFactory;
-import com.sun.jersey.api.core.PackagesResourceConfig;
-import com.sun.net.httpserver.HttpServer;
+import static com.netflix.ribbon.testutils.TestUtils.waitUntilTrueOrTimeout;
+import static org.junit.Assert.*;
 
 public class NettyClientTest {
     

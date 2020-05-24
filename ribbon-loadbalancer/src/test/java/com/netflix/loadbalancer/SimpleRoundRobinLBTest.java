@@ -18,20 +18,16 @@
 package com.netflix.loadbalancer;
 
 
-import static org.junit.Assert.*;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
+import static org.junit.Assert.*;
 
 public class SimpleRoundRobinLBTest {
 	static BaseLoadBalancer lb;

@@ -18,7 +18,6 @@
 package com.netflix.ribbon.transport.netty;
 
 import com.netflix.config.DynamicProperty;
-
 import io.reactivex.netty.client.MaxConnectionsBasedStrategy;
 
 /**

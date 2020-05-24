@@ -1,65 +1,27 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-
-# OS generated files #
-######################
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-
-# Editor Files #
-################
-*~
-*.swp
-
-# Gradle Files #
-################
-.gradle
-
-# Build output directies
-/target
-*/target
-/build
-*/build
-*/bin
-
-# IntelliJ specific files/directories
-out
-.idea
-*.ipr
-*.iws
-*.iml
-atlassian-ide-plugin.xml
-
-# Eclipse specific files/directories
-.classpath
-.project
-.settings
-.metadata
-
-# NetBeans specific files/directories
-.nbattrs
+.gradle/4.8.1/fileChanges/last-build.bin
+.gradle/4.8.1/fileHashes/fileHashes.bin
+.gradle/4.8.1/fileHashes/fileHashes.lock
+.gradle/4.8.1/taskHistory/taskHistory.bin
+.gradle/4.8.1/taskHistory/taskHistory.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/cache.properties
+.gradle/buildOutputCleanup/outputFiles.bin
+.gradle/vcsWorkingDirs/gc.properties
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/gradle.xml
+.idea/$CACHE_FILE$
+.idea/vcs.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/gradle.xml
+.idea/$CACHE_FILE$
+.idea/vcs.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/gradle.xml
+.idea/$CACHE_FILE$
+.idea/misc.xml

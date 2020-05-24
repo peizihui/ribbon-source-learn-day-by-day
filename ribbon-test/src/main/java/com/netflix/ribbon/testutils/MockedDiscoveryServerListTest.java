@@ -22,7 +22,6 @@ import com.netflix.discovery.DefaultEurekaClientConfig;
 import com.netflix.discovery.DiscoveryClient;
 import com.netflix.discovery.DiscoveryManager;
 import com.netflix.loadbalancer.Server;
-import org.easymock.EasyMock;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
